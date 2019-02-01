@@ -1,12 +1,14 @@
 <?php
-
+require_once ROOT. '/models/News.php';
 
 class NewsController
 {
 
     public function actionIndex()
     {
-        echo 'Список новостей';
+        $newsList = array();
+        $newsList = News::getNewsList ();
+        var_dump ($newsList);
         return true;
     }
 

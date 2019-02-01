@@ -11,6 +11,9 @@ class News
         //Запрос к БД
     }
 
+    /**
+     * @return array
+     */
     public static function getNewsList()
     {
 
