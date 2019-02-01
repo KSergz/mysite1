@@ -21,8 +21,6 @@ $router = new Router();
 $router->run ();
 //var_dump ($router);
 
-$a = $_SERVER['REQUEST_URI'];
-var_dump ($a);
 /**
 $string = '21-11-2015';
 //$string = '11-21-2015';

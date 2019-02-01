@@ -1,5 +1,6 @@
 <?php
 
+
 class NewsController
 {
 
@@ -9,9 +10,10 @@ class NewsController
         return true;
     }
 
-    public function actionView()
+    public function actionView($category, $id)
     {
-        echo 'Просмотр одной новости';
+        echo $category . '<br>';
+        echo $id . '<br>';
         return true;
 
     }
