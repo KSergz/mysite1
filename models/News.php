@@ -8,7 +8,20 @@ class News
      */
     public static function getNewsById($id)
     {
-        //Запрос к БД
+        $id = intval ($id);
+        if($id){
+
+            $db = Db::getConnection ();
+
+            $result = $db->query ('SELECT * from news WHERE id='.$id);
+            $result->setFetchMode (PDO::FETCH_ASSOC);
+            $newsItem = $result->fetch ();
+
+            return $newsItem;
+
+
+        }
+
     }
 
     /**
@@ -16,12 +29,7 @@ class News
      */
     public static function getNewsList()
     {
-        $host = 'localhost';
-        $dbname = 'php_base';
-        $user = 'root';
-        $password = '';
-        $dsn = "mysql:host=$host;dbname=$dbname";
-        $db = new PDO($dsn, $user, $password);
+        $db = Db::getConnection ();
 
         $newsList = [];
         $result = $db->query ('SELECT id, title, date, short_content 
