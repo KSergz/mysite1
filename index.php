@@ -22,19 +22,3 @@ $router->run ();
 //var_dump ($router);
 
 
-
-
-/**
-$string = '21-11-2015';
-//$string = '11-21-2015';
-
-$pattern = '/([0-9]{2})-([0-9]{2})-([0-9]{4})/';
-
-//$replacement = 'Year $3 - Month $2 - Day $1';
-$replacement = 'Month $2, Day $1, Year $3!';
-
-echo preg_replace ($pattern, $replacement, $string);
-
-//Month: 11, Day: 21, Year: 2015!
-die;
- */
