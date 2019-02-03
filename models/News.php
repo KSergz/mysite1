@@ -32,8 +32,7 @@ class News
         $db = Db::getConnection ();
 
         $newsList = [];
-        $result = $db->query ('SELECT id, title, date, short_content, author_name, preview
-                                      FROM news ORDER BY date DESC LIMIT 10' );
+        $result = $db->query ('SELECT id, title, date, author_name, short_content FROM news ORDER BY id ASC LIMIT 10' );
 
         $i = 0;
         while ($row = $result->fetch ()){
@@ -42,7 +41,7 @@ class News
             $newsList[$i]['date'] = $row['date'];
             $newsList[$i]['short_content'] = $row['short_content'];
             $newsList[$i]['author_name'] = $row['author_name'];
-            $newsList[$i]['preview'] = $row['preview'];
+            
             $i++;
 
 
