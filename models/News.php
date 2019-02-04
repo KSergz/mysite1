@@ -41,7 +41,7 @@ class News
             $newsList[$i]['date'] = $row['date'];
             $newsList[$i]['short_content'] = $row['short_content'];
             $newsList[$i]['author_name'] = $row['author_name'];
-            
+
             $i++;
 
 
