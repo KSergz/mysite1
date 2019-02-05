@@ -27,7 +27,7 @@
 	<div id="header-wrapper">
 		<div id="header">
 			<div id="logo">
-				<h1><a href="#">Effloresce </a></h1>
+				<h1><a href="#">LOREM IPS </a></h1>
 				<p>template Шаблоны для сайта <a href="http://www.ftemplate.ru/">СКАЧАТЬ</a></p>
 			</div>
 		</div>
