@@ -48,7 +48,26 @@ class News
         }
         return $newsList;
 
+    }
+
+    /**
+     * Return path to the image
+     * @param integer $id
+     * @return string <p>Return path to the image  </p>
+     */
+
+    public static function getImage($id){
+        $noImage = 'no-image.jpg';
+        $path = '/template/images/';
+        $pathToNewsImages = $path.$id.'.jpg';
+
+        if (file_exists ($_SERVER['DOCUMENT_ROOT'])){
+            return $pathToNewsImages;
+        }
+        return $path.$noImage;
 
     }
+
+
 
 }

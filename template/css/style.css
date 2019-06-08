@@ -1,14 +1,9 @@
 
-/*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
-*/
-
 body {
 	margin: 0;
 	padding: 0;
-	background: #554842;
+
+	background-image: url(../images/bg-light.jpg);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #737373;
@@ -92,7 +87,7 @@ img.aligncenter {
 	height: 100px;
 	margin: 0px auto;
 	padding: 80px 0px 0px 0px;
-	color: #FFFFFF;
+	color: #704646;
 }
 
 #logo h1, #logo p {
@@ -112,12 +107,12 @@ img.aligncenter {
 }
 
 #logo h1 a {
-	color: #FFFFFF;
+	color: #958282;
 }
 
 #logo p {
 	text-align: center;
-	text-transform: uppercase;
+
 	font-family: 'Arvo', serif;
 	font-size: 20px;
 }
@@ -311,7 +306,7 @@ img.aligncenter {
 #sidebar li li {
 	padding-left: 20px;
 	line-height: 35px;
-	background: url(images/img07.jpg) no-repeat left 14px;
+	background: url(../images/img07.jpg) no-repeat left 14px;
 }
 
 #sidebar li li span {
@@ -382,7 +377,7 @@ img.aligncenter {
 	padding: 30px 0px;
 	line-height: normal;
 	text-align: center;
-	color: #FFFFFF;
+	color:   #230808;
 }
 
 #footer a {
