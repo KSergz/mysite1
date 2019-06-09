@@ -58,7 +58,7 @@ class News
 
     public static function getImage($id){
         $noImage = 'no-image.jpg';
-        $path = '/template/images/';
+        $path = '/template/images/news/';
         $pathToNewsImages = $path.$id.'.jpg';
 
         if (file_exists ($_SERVER['DOCUMENT_ROOT'])){

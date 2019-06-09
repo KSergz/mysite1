@@ -1,12 +1,20 @@
 <?php
-
+require_once ROOT. '/models/Article.php';
 class ArticleController
 {
 
-
-    public function actionList()
+    /**
+     * @return bool
+     *
+     */
+    public function actionIndex()
     {
-        echo '[ArticleController] - [actionList] ';
+        $articleList = array();
+        $articleList = Article::getArticleList ();
+        //var_dump ($articleList);
+
+        require_once (ROOT.'/views/article/index.php');
+
         return true;
     }
 

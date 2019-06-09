@@ -1,5 +1,6 @@
 <?php
 
+//var_dump ($_SERVER); die();
 // FRONT CONTROLLER
 
 // 1. Общие настройки

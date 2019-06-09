@@ -6,7 +6,7 @@ return array(
 
    // 'products/([0-9]+)' => 'products/list/$1',// actionList in ProductController
     //'products' => 'products/index',
-    'articles' => 'article/list',
+    'articles' => 'article/index',
 
 
 );
