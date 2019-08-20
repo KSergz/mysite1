@@ -8,5 +8,8 @@ return array(
     //'products' => 'products/index',
     'articles' => 'article/index',
 
+    '' => 'news/index',
 
 );
+
+ //preg_replace ($string, $replasement,$pattern);
