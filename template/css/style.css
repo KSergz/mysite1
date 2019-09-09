@@ -383,3 +383,8 @@ img.aligncenter {
 #footer a {
 	color: #FFFFFF;
 }
+
+a.current {
+	background: #2c9f30;
+	color: #230808;
+}
